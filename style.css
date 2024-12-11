@@ -1,217 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+.rem-TITULO {
+    font-family: "REM", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
 
 
-/* General styles */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: normal;
-    scroll-behavior: smooth;
-}
-
-header {
-    background-color: #FF4500;
-    color: #fff;
-    padding: 1rem 0;
-    position: fixed;
-    top: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 100%;
     width: 100%;
-    z-index: 1000;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-}
-.logo{
-    display: flex;
-    flex-direction: row;
-
-
-}
-.logo h1{
-    margin-top: 22px;
-    margin-left: 10px;
+    background: linear-gradient(to bottom, #8f2fa8, #3b136c)
 }
 
-.logo img{
-    width: 60px;
+main{
+    height: 100%;
+    width: 100%;
 }
+
+
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    height: 3rem;
+    width: 100%;
     align-items: center;
-    padding: 0 2rem;
+    background-color: #160033;
+    justify-content: space-around;
+    box-shadow: 0 1rem 4rem black;
+}
+
+.navbar h1{
+    font-size: .8rem;
+    color: white;
+}
+
+.navbar a{
+    text-decoration: none;
 }
 
 .nav-links {
-    list-style: none;
+    justify-content: start;
     display: flex;
-    gap: 1.5rem;
+    flex-direction: row;
+    max-width: 80%;
+    gap: .5rem;
+
 }
 
-.nav-links a {
-    color: #fff;
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: .89rem;
+    color: #dbff76;
 }
 
-.nav-links a:hover {
-    color: #f4a261;
+.nav-links a:hover{
+    text-decoration: none;
+    font-size: .89rem;
+    color: #dbff76;
 }
 
-/* Scroll container */
-.scroll-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+#MenuNavBar {
+    background-color: #8c058c;
+    border-radius: 1em 1em 1em 1em;
+    padding: .3em 1em .3em 1em;
+    transition: 1s;
+}
+
+#MenuNavBar:hover {
+    background-color: rgb(65, 0, 65);
+}
+
+
+
+
+section {
     height: 100vh;
+    width: 100vw;
 }
 
-/* Sections */
-.section {
-    height: 100vh;
-    scroll-snap-align: center;
+.Hero {
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 2rem;
+    flex-direction: column;
+    font-family: "REM", sans-serif;
 }
 
-/*Hero section*/
-.hero {
-    background: url('https://image.slidesdocs.com/responsive-images/background/coffee-culture-illustration-powerpoint-background_e224109f77__960_540.jpg') no-repeat center center/cover;
-    color: #fff;
-}
-
-.hero-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: black;
-}
-
-.hero-content p {
-    margin-top: -1rem;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    color: black;
-}
-
-.hero-content button {
-    margin-top: -3rem;
-    padding: 0.8rem 1.5rem;
-    background-color: #FF4500;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.hero-content button:hover {
-    background-color: #e76f51;
-}
-
-/*Featured Products*/
-
-.featured-products {
-    background: url("https://wallpapers.com/images/hd/coffee-background-ry5ul29a0j7zl508.jpg") no-repeat center center/cover;
-    justify-content: space-between;
-}
-
-.featured-products h2 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-
-.product-list {
+.HeroTexto {
+    width: 90%;
+    height: 80%;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
 }
 
-.product {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: background-color 0.3s;
-}
-
-.product:hover {
-    background-color: gray;
-}
-
-
-.product img {
+.HeroTexto img {
+    height: 100%;
     max-width: 100%;
-    border-radius: 10px;
-    width: 15rem;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
 }
 
-.product h3 {
-    font-size: 1.2rem;
-    margin: 1rem 0 0.5rem;
-}
-
-/*Nostros section*/
-
-#nosotros {
-    justify-content: space-around;
-    background: url("https://i0.wp.com/faq.restaurant/wp-content/uploads/2024/06/%C2%BFComo-fomentar-el-trabajo-en-equipo-en-un-restaurante.webp?resize=840%2C840&ssl=1") no-repeat center center/cover;
-    color: white;
+.Destacados {
+    display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+    font-family: "REM", sans-serif;
 }
-#nosotros h2{
-    background-color: #FF4500;
 
-    padding: 1rem;
+.Destacados h2{
+    color: #dbff76;
+    font-size: 20px;
+    padding: .8rem .8rem .8rem .8rem;
     border-radius: 1rem;
-    font-size: 5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#nosotros p{
-    font-size: 2rem;
-    padding: 1rem;
-    background-color: #FF4500;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 1rem;
-
-    
-}
-
-#contacto {
-    background: url("https://images.assetsdelivery.com/compings_v2/tokhiti/tokhiti1811/tokhiti181100081.jpg") no-repeat center center/cover;
-    justify-content: space-around;
-    color: white;
-}
-
-#contacto h2{
-    background-color: #FF4500;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#contacto p{
-    background-color: #FF4500;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2a0060;
+    margin: 1rem 0 1rem 0;
+    font-weight: 900;
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
 }
 
 
-footer {
+
+.Productos-Destacados {
     text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
+    height: 100%;
+    width: 60%;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
 }
+
+.ProductoDestacado {
+    display: grid;
+    grid-template-rows: 75% 12.5% 12.5%;
+}
+
+/*Este codigo es el de las tarjetas de cada producto destacado*/
+
+.ProductoDestacado img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+.ProductoDestacado h3 {
+    color: #dbff76;
+}
+
+
+.ProductoDestacado h4 {
+    line-height: .9;
+    color: #dbff76;
+    font-size: .70rem;
+    background-color: #2a0060;
+    border-radius: .8rem .8rem .8rem .8rem;
+    padding: 4px 4px 4px 4px;
+}
+
+
+
+
+
+
+
