@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Cafetería</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -57,13 +58,36 @@
         </section>
 
         <section id="contacto" class="section Contacto">
-            <h2>Contacto</h2> <!--info@micafeteria.com-->
+            <h2>Contacto</h2>
+            <div id="FormContacto">
+                    <form class="Formularios">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                    
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    
+                        <button type="submit">Enviar</button>
+                    </form>
+            </div> 
         </section>
     </main>
 
-    <!--<footer>
-        &copy;Mi Cafetería. Todos los derechos reservados.
-    </footer>-->
+    <footer>
+        <div class="ContainerFooter">
+            <a href="https://twitter.com/devflatam?lang=en"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/devfla/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/devfla/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <p>&copy;Dev.f Coffee. Todos los derechos reservados</p>
+        </div class="ContainerFooter">    
+    </footer>
+
     
 </body>
 </html>
