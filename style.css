@@ -137,7 +137,7 @@ section {
     padding: .5rem .5rem .5rem .5rem;
     border-radius: 1rem;
     background-color: #2a0060;
-    margin: 1rem 0 1rem 0;
+    margin-bottom: 1rem;
     font-weight: 900;
     box-shadow: 0 0 1rem rgb(0, 0, 0);
     border: solid 2px white;
@@ -212,7 +212,7 @@ section {
     font-weight: 900;
     box-shadow: 0 0 1rem rgb(0, 0, 0);
     border: solid 2px white;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .Equipo {
@@ -224,6 +224,7 @@ section {
     padding: 0.5rem;
     border-radius: 2rem;
     border: solid 2px white;
+    box-shadow: 0 0 2rem black;
     
 }
 
@@ -242,7 +243,7 @@ section {
 .Integrante img {
     height: 100%;
     width: 100%;
-    border-radius: 2rem;
+    border-radius: 4rem;
 
 
 
@@ -266,7 +267,7 @@ section {
 }
 
 
-
+/*Empezamos con la seccion Contacto*/
 
 
 .Contacto {
@@ -277,9 +278,134 @@ section {
     align-items: center;
     font-family: "REM", sans-serif;
     height: 100%;
+    color: #dbff76;
+    margin-bottom: 10rem;
+}
+
+.Contacto h2{
+    max-width: 100%;
+    color: #dbff76;
+    font-size: 20px;
+    padding: .5rem .5rem .5rem .5rem;
+    border-radius: 1rem;
+    background-color: #2a0060;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+    border: solid 2px white;
+    margin-top: 2rem;
+}
+
+.Formularios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.Formularios label{
+    display: flex;
+    justify-content: center;
+    color: #dbff76;
+    font-size: 12px;
+    padding: .5rem .5rem .5rem .5rem;
+    border-radius: 1rem;
+    background-color: #06000e;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    box-shadow: 0 0 1rem rgb(47, 1, 58);
+    margin-top: 2rem;
+}
+
+.Formularios input {
+    background-color: #33037263;
+    border: solid 1px white;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    align-self: center;
+    text-align: center;
 }
 
 
+.Formularios input:focus {
+    background-color: #06000e63;
+    box-shadow: 0 0 1rem rgb(255, 255, 255);
+    outline: none;
+}
+
+.Formularios textarea {
+    background-color: #1e004563;
+    border: solid 1px white;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+}
+
+
+.Formularios textarea:focus {
+    background-color: #06000e63;
+    box-shadow: 0 0 1rem rgb(255, 255, 255);
+    outline: none;
+}
+
+.Formularios button {
+    border-radius: 1rem;
+    color: #dbff76;
+    border: solid 2px white;
+    background-color: #06000e63;
+    font-family: "REM", sans-serif;
+    margin-top: 2rem;
+    max-width: 100%;
+    padding: 0 1rem 0 1rem;
+
+}
+
+/*Empezamos con Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 45vh;
+    color: #dbff76;
+    background-color: black;
+    text-align: center;
+    gap: 1rem;
+    font-family: "REM", sans-serif;
+}
+
+.ContainerFooter {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer i{
+    background-color: #250237;
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+footer p{
+    font-size: .7rem;
+    color: #daff7683;
+    text-align: center;
+}
+
+footer i{
+    background-color: #250237;
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+footer a:visited{
+    color:#dbff76;
+}
 
 
 
