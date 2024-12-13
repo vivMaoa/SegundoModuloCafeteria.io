@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 .rem-TITULO {
     font-family: "REM", sans-serif;
     font-optical-sizing: auto;
@@ -14,17 +18,23 @@
 }
 
 
+
 body {
     font-size: 1rem;
     line-height: 1.5;
     height: 100%;
     max-width: 100vw;
-    background: linear-gradient(to bottom, #7d019c, #090113)
+    background: linear-gradient(to bottom, #7d019c, #090113);
+    transition: 1s;
 }
 
 main{
     height: 100%;
     max-width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Codigo de la NavBar*/
@@ -37,11 +47,14 @@ main{
     background-color: #160033;
     justify-content: space-around;
     box-shadow: 0 1rem 4rem black;
+    transition: 1s;
+    z-index: 1000;
 }
 
 .navbar h1{
     font-size: .8rem;
     color: white;
+    transition: 1s;
 }
 
 .navbar a{
@@ -67,11 +80,10 @@ main{
     color: #dbff76;
 }
 
-.nav-links a:hover{
-    text-decoration: none;
-    font-size: .89rem;
-    color: #dbff76;
+.nav-links li:hover{
+    transform: scale(1.1);
 }
+
 
 #MenuNavBar {
     background-color: #8c058c;
@@ -91,6 +103,8 @@ section {
     height: 100vh;
     width: 100vw;
 }
+
+
 
 /*Empezamos con la seccion hero*/
 .Hero {
@@ -114,7 +128,7 @@ section {
 .HeroTexto img {
     height: 100%;
     max-width: 100%;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
 }
 
 /*Empezamos con la seccion Destacados*/
@@ -132,14 +146,14 @@ section {
 .Destacados h2{
     max-width: 100%;
     color: #dbff76;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: .5rem .5rem .5rem .5rem;
     border-radius: 1rem;
     background-color: #2a0060;
     margin-bottom: 1rem;
     font-weight: 900;
     box-shadow: 0 0 1rem rgb(0, 0, 0);
-    border: solid 2px white;
+    border: solid 0.1rem white;
 }
 
 
@@ -156,7 +170,8 @@ section {
     display: grid;
     grid-template-rows: repeat(3,1fr);
     justify-content: center;
-    border: solid 2px white;
+    border: solid 0.1rem white;
+    transition: 1s;
 }
 
 .ProductoDestacado {
@@ -164,6 +179,7 @@ section {
     grid-template-rows: 70% 15% 15%;
     height: 100%;
     width: 100%;
+    transition: 1s;
 }
 
 
@@ -171,6 +187,7 @@ section {
     height: 100%;
     width: 100%;
     border-radius: 2rem 2rem 2rem 2rem;
+    
 }
 
 .ProductoDestacado h3 {
@@ -204,14 +221,14 @@ section {
 .platillos h2{
     max-width: 100%;
     color: #dbff76;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: .5rem .5rem .5rem .5rem;
     border-radius: 1rem;
     background-color: #2a0060;
     margin: 1rem 0 1rem 0;
     font-weight: 900;
     box-shadow: 0 0 1rem rgb(0, 0, 0);
-    border: solid 2px white;
+    border: solid .1rem white;
     margin-top: 2rem;
 }
 
@@ -223,7 +240,7 @@ section {
     width: 90%;
     height: 100%;
     background-color: #34004e;
-    border: solid 2px white;
+    border: solid 0.1rem white;
     border-radius: 2rem;
     padding: 1rem;
 }
@@ -270,14 +287,14 @@ section {
 .Nosotros h2{
     max-width: 100%;
     color: #dbff76;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: .5rem .5rem .5rem .5rem;
     border-radius: 1rem;
     background-color: #2a0060;
     margin: 1rem 0 1rem 0;
     font-weight: 900;
     box-shadow: 0 0 1rem rgb(0, 0, 0);
-    border: solid 2px white;
+    border: solid .1rem white;
     margin-top: 2rem;
 }
 
@@ -289,7 +306,7 @@ section {
     background-color: #54047c;
     padding: 0.5rem;
     border-radius: 2rem;
-    border: solid 2px white;
+    border: solid .1rem white;
     box-shadow: 0 0 2rem black;
     
 }
@@ -351,14 +368,14 @@ section {
 .Contacto h2{
     max-width: 100%;
     color: #dbff76;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: .5rem .5rem .5rem .5rem;
     border-radius: 1rem;
     background-color: #2a0060;
     margin-bottom: 1rem;
     font-weight: 900;
     box-shadow: 0 0 1rem rgb(0, 0, 0);
-    border: solid 2px white;
+    border: solid 0.1rem white;
     margin-top: 2rem;
 }
 
@@ -374,7 +391,7 @@ section {
     display: flex;
     justify-content: center;
     color: #dbff76;
-    font-size: 12px;
+    font-size: 1rem;
     padding: .5rem .5rem .5rem .5rem;
     border-radius: 1rem;
     background-color: #06000e;
@@ -386,8 +403,8 @@ section {
 
 .Formularios input {
     background-color: #33037263;
-    border: solid 1px white;
-    border-radius: 10px 10px 10px 10px;
+    border: solid .02rem white;
+    border-radius: .5rem .5rem .5rem .5rem;
     color: white;
     align-self: center;
     text-align: center;
@@ -402,8 +419,8 @@ section {
 
 .Formularios textarea {
     background-color: #1e004563;
-    border: solid 1px white;
-    border-radius: 10px 10px 10px 10px;
+    border: solid 0.1rem white;
+    border-radius: .5rem .5rem .5rem .5rem;
     color: white;
 }
 
@@ -417,7 +434,7 @@ section {
 .Formularios button {
     border-radius: 1rem;
     color: #dbff76;
-    border: solid 2px white;
+    border: solid .1rem white;
     background-color: #06000e63;
     font-family: "REM", sans-serif;
     margin-top: 2rem;
@@ -474,8 +491,400 @@ footer a:visited{
 }
 
 
+@media (min-width: 400px) and (max-width: 540px) {
+
+    html{
+        font-size: 16px;
+    }
+    
+    .navbar {
+        height: 4rem;
+    }
+    
+    .navbar h1{
+        font-size: 1.5rem;
+        color: #dbff76;
+    }
+
+    .nav-links a{
+        font-size: 1rem;
+    }
+    
+    .HeroTexto img {
+        width: 90vw;
+    }
+    /*Empezamos con la seccion Destacados*/
+    
+    .Destacados {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "REM", sans-serif;
+        height: 100%;
+    }
+    
+    /*Este codigo es el de las tarjetas de cada producto destacado*/
+    
+    .Productos-Destacados {
+        width: 90%;
+        max-height: 40%;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+
+    }
+    
+    .ProductoDestacado {
+        display: grid;
+        grid-template-rows: 70% 15% 15%;
+        height: 100%;
+        width: 100%;
+        padding: 0rem 0 2rem 0;
+        border: .1rem solid rgba(255, 255, 255, 0.242);
+        border-radius: 1rem;
+    }
+    
+    
+    .ProductoDestacado img {
+        height: 100%;
+        width: 100%;
+        border-radius: 1rem 1rem 1rem 1rem;
+        transition: 1s;
+        border: .05rem solid rgba(255, 255, 255, 0.242);
+    }
+
+    
+    .ProductoDestacado h3 {
+        color: #c900a4;
+    }
+
+    .grid-platillos {
+        display: grid;
+        grid-template-rows: repeat(5,1fr);
+        width: 90%;
+        height: 100%;
+        background-color: #34004e;
+        border: solid 0.1rem white;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+    
+    .platillos {
+        width: 50%;
+        height: 100%;
+    }
+    .Platillo h3 {
+        color: #bb04dc;
+    }
+    
+    .Platillo h4 {
+        margin-top: .3rem;
+    }
+    /*Empezamos con la seccion nosotros 400px*/
+
+    .Equipo {
+        max-width: 90%;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .Integrante {
+        border: .1rem solid rgba(255, 255, 255, 0.318);
+        border-radius: 4rem 4rem 1rem 1rem;
+    }
+
+    .Equipo h3 {
+        color: #fb00ff;
+    }
+
+    
+    .Equipo h4 {
+        padding: 0 .5rem 0 .5rem;
+    }
+
+    .Contacto h2{
+        box-shadow: 0 0 .5rem white;
+        border: none;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 1000px) {
+
+    
+    html{
+        font-size: 17px;
+    }
+
+    .navbar h1{
+        font-size: 2rem;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    .HeroTexto img {
+    height: 80vh;
+    content: url(images/heroimg2.png);
+    }
+
+    .Productos-Destacados {
+        width: 95%;
+        max-height: 40%;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
+
+    .ProductoDestacado {
+        display: grid;
+        grid-template-rows: 70% 15% 15%;
+        height: 100%;
+        width: 100%;
+        padding: 0rem 0 2rem 0;
+        border: .1rem solid rgba(255, 255, 255, 0.242);
+        border-radius: 1rem;
+    }
+
+    .ProductoDestacado h3{
+        font-size: 1.5rem;
+    }
+
+    .ProductoDestacado h4{
+        font-size: 1.05rem;
+    }
+
+    .ProductoDestacado h3 {
+        color: #c900a4;
+    }
+
+    .grid-platillos {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
+        width: 95vw;
+        gap: 1rem;
+    }
+
+    #Platillo1{
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+        font-size: 2rem;
+    }
+
+    #Platillo1 h4{
+        font-size: 2rem;
+    }
+    
+    .platillos {
+        width: 50%;
+        height: 100%;
+    }
+    .Platillo h3 {
+        color: #bb04dc;
+    }
+    
+    .Platillo h4 {
+        margin-top: .3rem;
+        height: 50%;
+    }
+    /*Empezamos con la seccion nosotros 400px*/
+
+    .Equipo {
+        max-width: 90%;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .Integrante {
+        border: .1rem solid rgba(255, 255, 255, 0.318);
+        border-radius: 4rem 4rem 1rem 1rem;
+    }
+
+    .Equipo h3 {
+        color: #fb00ff;
+    }
+
+    
+    .Equipo h4 {
+        padding: 0 .5rem 0 .5rem;
+    }
+
+    .Contacto h2{
+        box-shadow: 0 0 .5rem white;
+        border: none;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    .Formularios {
+        width: 70vw;
+
+    }
+    
+    .Formularios label{
+        font-size: 1.5rem;
+    }
+
+    .Formularios input {
+        height: 100%;
+        width: 70%;
+    }
+
+    .Formularios textarea {
+        width: 80%;
+    }
+
+    .Formularios button{
+        font-size: 1.5rem;
+    }
 
 
+}
+    
+@media (min-width: 1000px) {
+
+    html{
+        font-size: 17px;
+    }
+
+    .navbar {
+        font-size: 1rem;
+        position: fixed;
+        width: 100vw;
+    }
+
+    .navbar h1{
+        font-size: 2rem;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        gap: 2rem;
+    }
+
+    
+    .HeroTexto img {
+    width: 100vw;
+    height: 100vh;
+    content: url(images/computerimg.png);
+    }
+
+    .Productos-Destacados {
+        width: 60%;
+        max-height: 40%;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
+
+    .ProductoDestacado img {
+        transition: 1s;
+    }
+
+    .ProductoDestacado img:hover {
+        transform: scale(1.05);
+        transform: rotate(5deg);
+    }
+
+    .ProductoDestacado h3{
+        font-size: 2rem;
+    }
+
+    .ProductoDestacado h4{
+        font-size: 1.4rem;
+    }
+
+    .ProductoDestacado h3 {
+        color: #c900a4;
+    }
+
+    .grid-platillos {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
+        width: 70vw;
+        height: 91vh;
+        gap: 1rem;
+    }
+
+    .Platillo {
+        border: 1px solid white;
+        border-radius: 2rem 2rem 2rem 2rem;
+    }
+
+    #Platillo1{
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+        font-size: 2rem;
+    }
+
+    #Platillo1 h4{
+        font-size: 2rem;
+    }
+    
+    .Equipo {
+        max-width: 90%;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .Integrante {
+        border: .1rem solid rgba(255, 255, 255, 0.318);
+        border-radius: 4rem 4rem 1rem 1rem;
+    }
+
+    .Equipo h3 {
+        color: #fb00ff;
+    }
+
+    
+    .Equipo h4 {
+        padding: 0 .5rem 0 .5rem;
+    }
+
+    .Contacto h2{
+        box-shadow: 0 0 .5rem white;
+        border: none;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    .Formularios {
+        width: 70vw;
+
+    }
+    
+    .Formularios label{
+        font-size: 1.5rem;
+    }
+
+    .Formularios input {
+        height: 100%;
+        width: 70%;
+    }
+
+    .Formularios textarea {
+        width: 80%;
+    }
+
+    .Formularios button{
+        font-size: 1.5rem;
+    }
+}
 
 
 
